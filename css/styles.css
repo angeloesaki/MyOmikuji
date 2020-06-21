@@ -46,3 +46,26 @@ body {
   opacity: 0.9;
   pointer-events: none;
 }
+
+.appeared {
+  width: 100px;
+  height: 40px;
+  color: black;
+  font-size: 17px;
+  background: skyblue;
+  text-align: center;
+  line-height: 40px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 7px 0 steelblue;
+  cursor: pointer;
+}
+
+.appeared:hover {
+  opacity: 0.9;
+}
+
+.appeared:active {
+  box-shadow: 0 4px 0 steelblue;
+  margin-top: 53px;
+}

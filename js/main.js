@@ -2,6 +2,12 @@
 
 {
   const btn = document.getElementById("btn");
+  const retry = document.getElementById("retry");
+
+  function appearRetryBtn() {
+    retry.classList.add("appeared");
+    retry.textContent = "やり直す";
+  }
 
   btn.addEventListener("click", () => {
     // const results = ["大吉", "中吉", "凶", "末吉"];
@@ -47,6 +53,7 @@
     }
 
     btn.classList.add("inactive");
+    appearRetryBtn();
   });
 
   const youbi = ["日", "月", "火", "水", "木", "金", "土"];
@@ -64,4 +71,8 @@
   }
 
   showTodaysDate();
+
+  retry.addEventListener("click", () => {
+    location.reload();
+  });
 }
